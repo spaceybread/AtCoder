@@ -1,4 +1,4 @@
-#TLE
+#WA
 
 import math
 
