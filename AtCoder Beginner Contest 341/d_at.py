@@ -1,3 +1,5 @@
+#TLE/WA
+
 def gcd3(a, b):
     if (b == 0):
         return abs(a)
