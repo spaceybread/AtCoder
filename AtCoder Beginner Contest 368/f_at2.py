@@ -27,14 +27,11 @@ def grund(n, memo):
     memo[n] = mex
     return mex
 
-def compute_game_winner(a):
-    memo = {}
-    xor_sum = 0
-    for num in a:
-        xor_sum ^= grund(num, memo)
-    return "Bruno" if xor_sum == 0 else "Anna"
-
 n = int(input().strip())
 a = list(map(int, input().strip().split()))
 
-print(compute_game_winner(a))
+memo = {}
+xor_sum = 0
+for num in a:
+    xor_sum ^= grund(num, memo)
+print("Bruno") if xor_sum == 0 else print("Anna")
